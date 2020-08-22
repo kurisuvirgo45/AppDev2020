@@ -132,6 +132,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void processResults() {
+        Toast.makeText(getApplicationContext(),"Hellogit",Toast.LENGTH_LONG).show();
         btnStart.setEnabled(true);
         if (lottoIndex < resultBalls.length) {
             btnStart.performClick();
