@@ -15,7 +15,7 @@ import org.w3c.dom.Text;
 import java.util.ArrayList;
 import java.util.Random;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends BaseActivity {
 
     TextView lblWinners, lblPrize;
     EditText txtLotto1, txtLotto2, txtLotto3, txtLotto4, txtLotto5, txtLotto6, txtRandom1, txtRandom2, txtRandom3,
@@ -37,9 +37,19 @@ public class MainActivity extends AppCompatActivity {
 
 
     @Override
+    protected int getLayoutResId() {
+        return R.layout.activity_main;
+    }
+
+    @Override
+    protected String getActivityName() {
+        return "Activity 5";
+    }
+
+    @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+//        setContentView(R.layout.activity_main);
 
         //Initialize Lotto Balls
         LottoBalls = new ArrayList<>();

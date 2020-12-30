@@ -7,6 +7,7 @@
     android:background="#30938A"
     android:gravity="center"
     android:orientation="vertical"
+    android:layout_below="@id/toolbar"
     tools:context=".MainActivity">
 
     <TextView
